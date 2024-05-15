@@ -1,0 +1,1 @@
+knex migrate:make create_table_om_user --knexfile ./src/adapters/repositories/db/clients/knex/configs/mysql.js

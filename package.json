@@ -1,0 +1,51 @@
+{
+  "name": "neco",
+  "version": "1.0.0",
+  "description": "SORANECO backend service",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "migrate-list": "knex migrate:list --knexfile ./src/adapters/repositories/db/clients/knex/configs/mysql.js",
+    "migrate-make": "knex migrate:make --knexfile ./src/adapters/repositories/db/clients/knex/configs/mysql.js",
+    "migrate": "knex migrate:latest --knexfile ./src/adapters/repositories/db/clients/knex/configs/mysql.js",
+    "rollback": "knex migrate:rollback --all --knexfile ./src/adapters/repositories/db/clients/knex/configs/mysql.js",
+    "seed": "knex seed:run --knexfile ./src/adapters/repositories/db/clients/knex/configs/mysql.js",
+    "prettify": "prettier --write \"**/*.{js,jsx,json,md,html,css,less,scss}\"",
+    "test": "jest --coverage"
+  },
+  "jest": {
+    "verbose": true,
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    },
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/src/core/ports/"
+    ]
+  },
+  "author": "wildan istaqomudin",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@apollo/server": "^4.9.4",
+    "axios": "^1.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "graphql-tag": "^2.12.6",
+    "ioredis": "^5.3.2",
+    "jsonwebtoken": "^9.0.0",
+    "knex": "^2.5.1",
+    "mysql": "^2.18.1",
+    "redis": "^4.6.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.3",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.4",
+    "@faker-js/faker": "^8.0.2",
+    "babel-jest": "^29.5.0",
+    "jest": "^29.5.0",
+    "prettier": "^3.1.0"
+  }
+}

@@ -1,0 +1,1 @@
+export const DUMMY_ACTIVITY_NAME = "DUMMY_ACTIVITY";
