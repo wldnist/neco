@@ -1,9 +1,9 @@
-export const LoginReq = {
+export const CreateReq = {
   properties: {
-    email: {
+    code: {
       type: "string",
     },
-    password: {
+    name: {
       type: "string",
     },
   },

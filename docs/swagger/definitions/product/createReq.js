@@ -1,22 +1,15 @@
 export const CreateReq = {
   properties: {
-    email: {
+    category_code: {
+      type: "string",
+    },
+    code: {
       type: "string",
     },
     name: {
       type: "string",
     },
-    phone: {
-      type: "string",
-    },
-    dob: {
-      type: "string",
-      format: "date-time",
-    },
-    status: {
-      type: "integer",
-    },
-    password: {
+    description: {
       type: "string",
     },
   },

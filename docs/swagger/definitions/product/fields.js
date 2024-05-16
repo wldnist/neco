@@ -1,40 +1,39 @@
-export const LoginInfoFields = {
+export const Fields = {
   properties: {
+    id: {
+      type: "integer",
+    },
     uuid: {
       type: "string",
     },
-    email: {
+    category_code: {
+      type: "string",
+    },
+    code: {
       type: "string",
     },
     name: {
       type: "string",
     },
-    phone: {
+    description: {
       type: "string",
     },
-    dob: {
+    status: {
+      type: "string",
+    },
+    created_by: {
+      type: "string",
+    },
+    updated_by: {
+      type: "string",
+    },
+    created_at: {
       type: "string",
       format: "date-time",
     },
-    status: {
-      type: "integer",
-    },
-    verified: {
-      type: "boolean",
-    },
-    token: {
+    updated_at: {
       type: "string",
+      format: "date-time",
     },
-    refresh_token: {
-      type: "string",
-    },
-    token_exp: {
-      type: "string",
-    },
-    refresh_token_exp: {
-      type: "string",
-    },
-    user_sp_matrix: {},
-    user_menu_matrix: {},
   },
 };

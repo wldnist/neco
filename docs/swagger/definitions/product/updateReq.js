@@ -1,22 +1,18 @@
 export const UpdateReq = {
   properties: {
-    email: {
+    category_code: {
+      type: "string",
+    },
+    code: {
       type: "string",
     },
     name: {
       type: "string",
     },
-    phone: {
+    description: {
       type: "string",
-    },
-    dob: {
-      type: "string",
-      format: "date-time",
     },
     status: {
-      type: "integer",
-    },
-    password: {
       type: "string",
     },
   },
