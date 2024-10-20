@@ -7,6 +7,8 @@
     "start": "nodemon app.js",
     "migrate-list": "knex migrate:list --knexfile ./src/adapters/repositories/db/clients/knex/configs/mysql.js",
     "migrate-make": "knex migrate:make --knexfile ./src/adapters/repositories/db/clients/knex/configs/mysql.js",
+    "migrate-up": "knex migrate:up --knexfile ./src/adapters/repositories/db/clients/knex/configs/mysql.js",
+    "migrate-down": "knex migrate:down --knexfile ./src/adapters/repositories/db/clients/knex/configs/mysql.js",
     "migrate": "knex migrate:latest --knexfile ./src/adapters/repositories/db/clients/knex/configs/mysql.js",
     "rollback": "knex migrate:rollback --all --knexfile ./src/adapters/repositories/db/clients/knex/configs/mysql.js",
     "seed": "knex seed:run --knexfile ./src/adapters/repositories/db/clients/knex/configs/mysql.js",
